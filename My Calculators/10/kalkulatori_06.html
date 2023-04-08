@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Makine llogaritese Pano ft. Ilir </title>
+<style>
+    #buton {
+    font-size:25px;
+    width:60px;
+    height:60px;
+    border-radius:5px;
+    margin:3px;
+    border-color:red;
+    }
+
+    #pastro {
+    color:white;
+    background-color:red;
+    font-size:30px;
+    width:60px;
+    height:60px;
+    border-radius:5px;
+    margin:4px;
+    border-color:black;
+    }
+    .buton {
+    font-size:25px;
+    width:60px;
+    height:60px;
+    border-radius:5px;
+    margin:3px;
+    color:white;
+    background-color:black;
+    border-color:red;
+    }
+    #buton:hover, #pastro:hover, .buton:hover {
+    background-color:darkred;
+    }
+    #ekrani {
+    text-align:right;
+    padding:5px;
+    margin-bottom:20px;
+    font-size:40px;
+    width:420px;
+    height:40px;
+    border-radius:5px;
+    color:darkred;
+    border-color:red black;
+    background-color:lightblue;
+    }
+    #forma {
+    width:500px;
+    height:400px;
+    border-radius:15px;
+    border: 2px solid black;
+    background-image: linear-gradient(rgb(80,70,90), lightgray);
+    }
+</style>
+</head>
+<body>
+<br /><br />
+<center>
+        <br /><br />
+        <form name="kalkulatori" id="forma"><br />
+        <input id="ekrani" type="text" name="display" readonly="readonly">
+        <br />
+        <input id="buton" type="button" value="1" onclick="kalkulatori.display.value += '1'">
+        <input id="buton" type="button" value="2" onclick="kalkulatori.display.value += '2'">
+        <input id="buton" type="button" value="3" onclick="kalkulatori.display.value += '3'">&nbsp;&nbsp;
+        <input class="buton" type="button" value="+" onclick="kalkulatori.display.value += '+'">
+        <input class="buton" type="button" value=">" onclick="kalkulatori.display.value += '>'">
+        <input class="buton" type="button" value="." onclick="kalkulatori.display.value += '.'">
+        <br />
+        <input id="buton" type="button" value="4" onclick="kalkulatori.display.value += '4'">
+        <input id="buton" type="button" value="5" onclick="kalkulatori.display.value += '5'">
+        <input id="buton" type="button" value="6" onclick="kalkulatori.display.value += '6'">&nbsp;&nbsp;
+        <input class="buton" type="button" value="-" onclick="kalkulatori.display.value += '-'">
+        <input class="buton" type="button" value="&lt;" onclick="kalkulatori.display.value += '&lt;'">
+        <input class="buton" type="button" value="^" onclick="kalkulatori.display.value += '^'">
+        <br />
+        <input id="buton" type="button" value="7" onclick="kalkulatori.display.value += '7'">
+        <input id="buton" type="button" value="8" onclick="kalkulatori.display.value += '8'">
+        <input id="buton" type="button" value="9" onclick="kalkulatori.display.value += '9'">&nbsp;&nbsp;
+        <input class="buton" type="button" value="*" onclick="kalkulatori.display.value += '*'">
+        <input class="buton" type="button" value=">=" onclick="kalkulatori.display.value += '>='">
+        <input class="buton" type="button" value="===" onclick="kalkulatori.display.value += '==='">
+        <br />
+        <input id="buton" type="button" value="0" onclick="kalkulatori.display.value += '0'">
+        <input id="pastro" type="reset" value="C" onclick="kalkulatori.display.value += ' '">
+        <input class="buton" type="button" value="=" onclick="kalkulatori.display.value =eval(kalkulatori.display.value)">&nbsp;&nbsp;
+        <input class="buton" type="button" value="/" onclick="kalkulatori.display.value += '/'">
+        <input class="buton" type="button" value="<=" onclick="kalkulatori.display.value += '<='">
+        <input class="buton" type="button" value="%" onclick="kalkulatori.display.value += '%'">
+        </form>
+</center>
+</body>
+</html>
