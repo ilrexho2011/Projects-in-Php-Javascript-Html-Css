@@ -1,0 +1,113 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #2c3e50;
+    margin: 0 0;
+    padding: 0;
+    color: white;
+}
+
+.container-full-center{
+    width:97%;
+    text-align: center;
+    margin: 0 auto;
+}
+.container-800{
+    max-width:800px;
+    margin: 10px auto;
+}
+
+.square {
+    float:left;
+    width:29%;
+    margin: 1.60%;
+    border: 3px solid #81cfe0;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-transition:background 0.4s;
+    -moz-transition:background 0.4s;
+    transition: background 0.4s;
+}
+
+#optionsBar{
+    margin-top: 20px;
+    border: 2px solid #81cfe0;
+    border-radius:5px;
+    background-color: transparent;
+    height:50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.flexitem{
+    background-color: transparent;
+}
+#optionsBar button{
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+#optionsBar button:hover {
+    background-color: #81cfe0;
+    -webkit-transition:background 0.4s;
+    -moz-transition:background 0.4s;
+    transition: background 0.4s;
+}
+#header {
+    margin: 20px;
+    margin: 0 auto;
+}
+#header h1, #bottomHex h1 {
+ 	border: 2px solid #81cfe0;
+ 	width: 60%;
+ 	margin: 0 auto;
+ 	margin-top: 20px;
+ 	margin-bottom: 20px;
+ 	padding: 10px 0px 10px 0px;
+ 	border-radius: 10px;
+ 	transition: background 0.4s;
+}
+
+.container-full-center {
+    width:97%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#userMessage {
+    border: 2px solid #81cfe0;
+    -webkit-transition:background 0.4s;
+    -moz-transition:background 0.4s;
+    transition: background 0.4s;
+    border-radius: 5px;
+    padding: 10px;
+    width: 60%
+}
+
+.active {
+    background-color: #81cfe0;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .container-800{
+  	margin-top: 5%;
+  	max-width:480px;
+  	padding-left: 4%;
+  }
+  .square {
+        max-height: 100px;
+        width:27%;
+}
+ h1 {
+ 	font-size:18px;
+ }
+}
