@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  height: 100vh;
+  background: url("../images/Anonymous/3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 600px;
+  background: rgba(142, 68, 173, 0.3);
+  border-radius: 60px;
+  overflow: hidden;
+}
+.form h1 {
+  font-size: 70px;
+  color: #fff;
+  padding: 10px;
+  width: 230px;
+  position: absolute;
+  top: 18%;
+  left: 31%;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  transition: all 0.7s;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  text-align: center;
+}
+form .user input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  float: left;
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  transition: all 0.7s;
+  color: #fff;
+  font-size: 20px;
+}
+.user {
+  margin: 35px 0;
+}
+i {
+  float: left;
+  width: 24px;
+  font-size: 18px;
+  margin-top: 7px;
+  color: #fff;
+  transition: all 0.7s;
+}
+.btn {
+  padding: 10px 70px;
+  background: red;
+  border: none;
+  margin: 15px 0 0 20px;
+  transition: all 0.7s;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+}
+.input:hover {
+  border-bottom: 1px solid red;
+}
+.btn:hover {
+  padding: 10px 90px;
+  border-radius: 20px;
+}
+i:hover {
+  color: red;
+}
+h1:hover {
+  font-size: 80px;
+  color: red;
+  padding: 10px;
+  width: 270px;
+  position: absolute;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
