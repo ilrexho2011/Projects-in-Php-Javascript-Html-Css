@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Editor per HTML CSS dhe JS</title>
+        <!-- Stilizimi i gatshem i elementeve me CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- Libraria e gatshme jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Konpilimi i JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    textarea
+    {
+        min-height: 200px;
+        min-width: 100%;
+    }
+    body
+    {
+        /* background: #40404f; */
+    }
+</style>
+</head>
+<body>
+    <center>
+   <h2 class="text text-center text-info">Live Editor per HTML , CSS , JS</h2>
+        <table>
+            <tr><td><div class="col-sm-12">
+                        <h3 class="text text-danger">HTML Editor</h3>
+                        <textarea id="htmlInput" oninput="showOutput()"></textarea>
+                    </div></td>
+                <td><div class="col-sm-12">
+                        <h3 class="text text-danger">CSS Editor</h3>
+                        <textarea id="cssInput" oninput="showOutput()"></textarea>
+                    </div></td>
+                <td><div class="col-sm-12">
+                        <h3 class="text text-danger">JS Editor</h3>
+                        <textarea id="jsInput" oninput="showOutput()"></textarea>
+                    </div></td>
+            </tr>
+            <tr><td colspan="3"><div class="col-sm-9">
+                                    <h3 class="text text-success">Outputi</h3>
+                                    <div id="editorOutput" style="min-height: 400px; min-width: 1200px; border: 2px solid;"></div>
+                                </div></td></tr>
+        </table>
+    </center>
+</body>
+<script>
+   function  showOutput()
+    {
+        let html_input=document.getElementById("htmlInput").value;
+        let css_input="<style>"+document.getElementById("cssInput").value+"</style>"
+        // let js_input="<scri"+"pt>"+document.getElementById("jsInput").value+"</scri"+"pt>";
+        document.getElementById("editorOutput").innerHTML=css_input+""+html_input;
+    }
+</script>
+</html>
