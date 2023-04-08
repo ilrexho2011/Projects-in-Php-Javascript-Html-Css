@@ -1,0 +1,147 @@
+body{
+  background-color: #ea2027;
+  color: fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.login{
+  position: relative;
+  height: 560px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url('../images/DarkEdit/0.jpg') no-repeat center center #505050;
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+}
+form{
+  padding-top: 80px;
+}
+.active{
+  border-bottom: 2px solid #fe0009;
+}
+.nonactive{
+  color: rgba(254, 0, 9, 0.7);
+}
+h2{
+  padding-left: 12px;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fe0009;
+}
+h2:first-child {
+  padding-left: 0px;
+}
+span{
+  text-transform: uppercase;
+  font-size: 23px;
+  opacity: 0.8;
+  display: inline-block;
+  position: relative;
+  top: -70px;
+  transition: all 0.5s ease-in-out;
+  color: #fe0009;
+  font-weight: bold;
+}
+.text{
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.text:focus{
+  outline: 0;
+  border: 3px solid rgba(255 , 255, 255, 0.8);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.text:focus + span{
+  opacity: 0.8;
+}
+input{
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+h2, span, .custom-checkbox{
+  margin-left: 20px;
+}
+.custom-checkbox{
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+.custom-checkbox:checked{
+  background: rgba(254, 0, 9, 0.7);
+}
+.custom-checkbox:checked:after{
+  content: "\2714";
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: #fff;
+}
+.custom-checkbox:focus{
+  outline: none;
+}
+
+label{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #fe0009;
+  font-size: 20px;
+}
+.signin{
+  background-color: #ea2027;
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 45px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+.signin:hover{
+  background: #fe0009;
+  box-shadow: 0px 4px 35px -5px #fe0009;
+  cursor: pointer;
+}
+.signin:focus{
+  outline: none;
+}
+hr{
+  border: 2px solid #fe0009;
+  top: 85px;
+  position: relative;
+}
+a{
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  display: block;
+  top: 100px;
+  position: relative;
+  text-decoration: none;
+  color: #fe0009;
+}
