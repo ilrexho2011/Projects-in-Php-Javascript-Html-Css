@@ -1,0 +1,146 @@
+*, *::after, *::before {
+  box-sizing:  border-box;
+  font-family: Gotham Rounded, sans-serif;
+}
+
+body {
+  background:      linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  min-height:      100vh;
+  overflow:        hidden;
+}
+
+.ora {
+  width:            600px;
+  height:           600px;
+  background-color: #E5F0FF;
+  border-radius:    50%;
+  border:           30px solid gray;
+  position:         relative;
+}
+
+.ora.marka{
+  position:    absolute;
+  top:         50%;
+  left:        50%;
+  text-align:  center;
+  font-size:   6rem;
+  font-weight: bold;
+  color:       darkblue;
+}
+
+.ora .numer {
+  --rotation:  0;
+  position:    absolute;
+  width:       100%;
+  height:      100%;
+  text-align:  center;
+  transform:   rotate(var(--rotation));
+  font-size:   3rem;
+  font-weight: bold;
+  color:       darkblue;
+}
+
+.ora .numri1  { --rotation:  30deg; }
+.ora .numri2  { --rotation:  60deg; }
+.ora .numri3  { --rotation:  90deg; }
+.ora .numri4  { --rotation: 120deg; }
+.ora .numri5  { --rotation: 150deg; }
+.ora .numri6  { --rotation: 180deg; }
+.ora .numri7  { --rotation: 210deg; }
+.ora .numri8  { --rotation: 240deg; }
+.ora .numri9  { --rotation: 270deg; }
+.ora .numri10 { --rotation: 300deg; }
+.ora .numri11 { --rotation: 330deg; }
+
+.ora .pike {
+  --rotation: 0;
+  position:   absolute;
+  width:      100%;
+  height:     100%;
+  text-align: center;
+  transform:  rotate(var(--rotation));
+  font-size:  5rem;
+}
+
+.ora .pike1  { --rotation:  30deg; }
+.ora .pike2  { --rotation:  60deg; }
+.ora .pike3  { --rotation:  90deg; }
+.ora .pike4  { --rotation: 120deg; }
+.ora .pike5  { --rotation: 150deg; }
+.ora .pike6  { --rotation: 180deg; }
+.ora .pike7  { --rotation: 210deg; }
+.ora .pike8  { --rotation: 240deg; }
+.ora .pike9  { --rotation: 270deg; }
+.ora .pike10 { --rotation: 300deg; }
+.ora .pike11 { --rotation: 330deg; }
+
+.ora .germa {
+  position:    absolute;
+  width:       100%;
+  height:      100%;
+  font-family: 'tahoma', chiller;
+  text-align:  center;
+  font-size:   3rem;
+}
+
+.ora .germa1 { top: 25%; left: -15%; }
+.ora .germa2 { top: 25%; left: -8%; }
+.ora .germa3 { top: 25%; left: -2%; }
+.ora .germa4 { top: 25%; left: 3%; }
+.ora .germa5 { top: 25%; left: 10%; }
+.ora .germa6 { top: 25%; left: 17%; font-size:25px; }
+
+.ora .logo {
+  position: absolute;
+  width:    100%;
+  height:   100%;
+}
+
+.ora .logo1 { top: 15%; left: 36%; }
+
+.ora .akrepi {
+  --rotation: 0;
+  position:   absolute;
+  bottom:     50%;
+  left:       50%;
+  border:     1px solid black;
+  border-top-left-radius:  5px;
+  border-top-right-radius: 5px;
+  transform-origin: bottom;
+  z-index:    10;
+  transform:  translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.ora::after {
+  content:          '';
+  position:         absolute;
+  background-color: black;
+  z-index:          11;
+  width:            30px;
+  height:           30px;
+  top:              50%;
+  left:             50%;
+  transform:        translate(-50%, -50%);
+  border-radius:    50%;
+}
+
+.ora .akrepi.sekondave {
+  width:            10px;
+  height:           45%;
+  background-color: red;
+}
+
+.ora .akrepi.minutave {
+  width:            15px;
+  height:           40%;
+  background-color: gray;
+}
+
+.ora .akrepi.oreve {
+  width:            20px;
+  height:           35%;
+  background-color: black;
+}
