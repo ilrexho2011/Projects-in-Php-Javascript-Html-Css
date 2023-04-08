@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Kalkulatori ne tabele</title>
+  <style>
+  html{
+      background: radial-gradient(circle, #fff 30%, #ccc);
+  }
+
+  #ekrani{
+      width: 700px;
+      height: 100px;
+      background-color: powderblue;
+      border: 1px solid royalblue;
+      color: royalblue;
+      text-align: right;
+      font-size: 90px;
+  }
+  #but1{
+     width: 160px;
+      height: 50px;
+      background-color: royalblue;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  #but2{
+     width: 80px;
+      height: 50px;
+      background-color: red;
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  #but3{
+     width: 160px;
+      height: 50px;
+      background-color: lightgray;
+      border: 1px solid black;
+      border-radius: 10px;
+      color: black;
+      font-size: 40px;
+  }
+  #but4{
+     width: 80px;
+      height: 50px;
+      background-color: greenyellow;
+      border: 1px solid green;
+      border-radius: 10px;
+      color: green;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  #but5{
+     width: 100px;
+      height: 350px;
+      background-color: orange;
+      border: 1px solid maroon;
+      border-radius: 10px;
+      color: maroon;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  #but6{
+     width: 160px;
+      height: 50px;
+      background-color: maroon;
+      border: 1px solid orange;
+      border-radius: 10px;
+      color: orange;
+      font-weight: bold;
+      font-size: 40px;
+  }
+  </style>
+</head>
+
+<body>
+   <center>
+       <h1>Kalkulatori me tabele</h1>
+   <form name="kalkulatori">
+       <table cellspacing="5" bgcolor="gray">
+           <tr>
+           <td colspan="5"><input type="text" name="display" id="ekrani" onkeypress="return event.charCode >= 48 && event.charCode <= 57" /></td>
+           <td style="display: none;"><input type="number" name="M" /></td></tr>
+           <tr>
+           <td><input type="button" value="M+" id="but1" OnClick="kalkulatori.M.value=(Number(kalkulatori.M.value)+(Number(kalkulatori.display.value)" /></td>
+           <td><input type="button" value="M-" id="but1" OnClick="kalkulatori.M.value=(Number(kalkulatori.M.value)-(Number(kalkulatori.display.value)" /></td>
+           <td><input type="button" value="Mr" id="but1" OnClick="kalkulatori.display.value=kalkulatori.M.value" /></td>
+           <td><input type="button" value="C"  id="but2" OnClick="kalkulatori.display.value=''" /></td>
+           <td rowspan="6"><input type="button" value="=" id="but5" OnClick="kalkulatori.display.value=eval(kalkulatori.display.value)" /></td></tr>
+           <tr>
+           <td><input type="button" value="7" id="but3" OnClick="kalkulatori.display.value+='7'" /></td>
+           <td><input type="button" value="8" id="but3" OnClick="kalkulatori.display.value+='8'" /></td>
+           <td><input type="button" value="9" id="but3" OnClick="kalkulatori.display.value+='9'" /></td>
+           <td><input type="button" value="+" id="but4" OnClick="kalkulatori.display.value+='+'" /></td>
+           </tr>
+           <tr>
+           <td><input type="button" value="4" id="but3" OnClick="kalkulatori.display.value+='4'" /></td>
+           <td><input type="button" value="5" id="but3" OnClick="kalkulatori.display.value+='5'" /></td>
+           <td><input type="button" value="6" id="but3" OnClick="kalkulatori.display.value+='6'" /></td>
+           <td><input type="button" value="-" id="but4" OnClick="kalkulatori.display.value+='-'" /></td>
+           </tr>
+           <tr>
+           <td><input type="button" value="1" id="but3" OnClick="kalkulatori.display.value+='1'" /></td>
+           <td><input type="button" value="2" id="but3" OnClick="kalkulatori.display.value+='2'" /></td>
+           <td><input type="button" value="3" id="but3" OnClick="kalkulatori.display.value+='3'" /></td>
+           <td><input type="button" value="*" id="but4" OnClick="kalkulatori.display.value+='*'" /></td>
+           </tr>
+           <tr>
+           <td><input type="button" value="-/+" id="but6" OnClick="kalkulatori.display.value=(kalkulatori.display.value==Math.abs(kalkulatori.display.value)?-(kalkulatori.display.value):Math.abs(kalkulatori.display.value))" /></td>
+           <td><input type="button" value="0"   id="but3" OnClick="kalkulatori.display.value+='0'" /></td>
+           <td><input type="button" value="."   id="but6" OnClick="kalkulatori.display.value+='.'" /></td>
+           <td><input type="button" value="/"   id="but4" OnClick="kalkulatori.display.value+='/'" /></td>
+           </tr>
+           <tr>
+           <td><input type="button" value="1/x" id="but6" OnClick="kalkulatori.display.value=1/kalkulatori.display.value" /></td>
+           <td><input type="button" value="x2"  id="but6" OnClick="kalkulatori.display.value=Math.pow(kalkulatori.display.value,2)" /></td>
+           <td><input type="button" value="v"   id="but6" OnClick="kalkulatori.display.value=Math.sqrt(kalkulatori.display.value)" /></td>
+           <td><input type="button" value="%"   id="but4" OnClick="kalkulatori.display.value+='%'" /></td>
+           </tr>
+       </table>
+   </form>
+   </center>
+</body>
+
+</html>
