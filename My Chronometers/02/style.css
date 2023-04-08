@@ -1,0 +1,103 @@
+/* Variabes */
+$orange: #ffa600;
+$grey:#f3f3f3;
+
+
+/* Mixin's */
+@mixin transition {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+@mixin corners ($radius) {
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+border-radius: $radius;
+-khtml-border-radius: $radius;
+}
+
+body {
+background: orange;
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+height:100%;
+}
+
+.wrapper {
+width: 800px;
+margin: 30px auto;
+color: black;
+text-align:center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 3.0em;
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+#seconds, #tens{
+    font-size: 10em;
+    color: red;
+}
+
+#button-start{
+background-color: black;
+color: orange;
+border: solid 1px $white;
+border-radius: 15px;
+text-decoration:none;
+cursor: pointer;
+font-size: 2.0em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+outline: none;
+}
+#button-start:hover{
+    background-color: red;
+    border: solid 1px white;
+    color: white;
+}
+#button-stop{
+background-color: black;
+color: orange;
+border: solid 1px $white;
+border-radius: 15px;
+text-decoration:none;
+cursor: pointer;
+font-size: 2.0em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+outline: none;
+}
+#button-stop:hover{
+background-color: red;
+border: solid 1px white;
+color: white;
+}
+#button-reset{
+background-color: black;
+color: orange;
+border: solid 1px $white;
+border-radius: 15px;
+text-decoration:none;
+cursor: pointer;
+font-size: 2.0em;
+padding:18px 10px;
+width:180px;
+margin: 10px;
+outline: none;
+}
+#button-rese:hover{
+    background-color: red;
+    border: solid 1px white;
+    color: white;
+}
