@@ -1,0 +1,26 @@
+#titulli{
+    text-align: center;
+}
+#kalkulatori{
+    background-color: silver;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+}
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+textarea{
+    display: block;
+    margin-bottom: 8px;
+    margin-left:auto; 
+    margin-right:auto;
+    border-radius: 5px;
+ }
+
+ button{
+    height: 40px;
+    width: 40px;
+ }
