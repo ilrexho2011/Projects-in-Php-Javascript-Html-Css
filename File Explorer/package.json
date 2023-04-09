@@ -1,0 +1,54 @@
+{
+  "name": "oschen",
+  "version": "1.1.0",
+  "homepage": "https://anna.github.io",
+  "description": "Anna | File Explorer",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build && echo oschen.github.io > ./build/CNAME",
+    "deploy": "gh-pages -d build",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "keywords": [
+    "JS",
+    "SASS",
+    "BABEL",
+    "WEBPACK",
+    "REACT",
+    "TYPESCRIPT"
+  ],
+  "author": "@anna",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "@npmcli/fs": "^3.1.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "babel-loader": "^9.0.0",
+    "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "react-rnd": "^10.4.1",
+    "react-router-dom": "^6.3.0",
+    "sass-loader": "^13.1.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "copy-webpack-plugin": "^11.0.0",
+    "typescript": "^4.9.3",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

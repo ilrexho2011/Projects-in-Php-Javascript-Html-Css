@@ -1,0 +1,146 @@
+
+#ContentPc {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 250px;
+}
+@media (max-width: 768px) {
+    #ContentPc {
+        display: flex;
+    }
+}
+
+.active {
+    background-color: $active_pc;
+}
+.ExplorerList {
+    list-style: none;
+    .mipc {
+        display: flex;
+        align-items: center;
+    }
+
+    li, span {
+        font-size: .95em;
+        font-weight: normal;
+        list-style: none;
+    }
+}
+.RoutesPc .selected {
+    background-color: $selectedId !important;
+}
+.RoutesPc li {
+    padding: .2em .5em;
+
+    &:hover {
+        background-color: $rgba_white2;
+    }
+}
+.ContainerPc {
+    width: 100%;
+    background-color: $container_pc;
+    border-left: 1px solid $rgba_blue4;
+    border-top: 1px solid $rgba_blue4;
+    padding: 1em 0 .5em .5em;
+
+    .select {
+        background-color: $selectedId !important;
+
+        &:hover {
+            background-color: $rgba_white2;
+        }
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        padding: .3em;
+
+        &:hover {
+            background-color: $rgba_white2;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .ContainerPc {
+        border-left: none;
+    }
+}
+
+#Home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: inherit;
+    width: 97%;
+
+    .Home {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: .5em;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    
+        span {
+            font-size: .7em;
+            font-weight: normal;
+        }
+    }
+}
+@media (max-width: 768px) {
+
+    #Home {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+@media (max-width: 769px) {
+    #Pc {
+        grid-template-columns: repeat(4, 1fr);
+        width: 92%;
+    }
+}
+/* <---- Explorer Default ----> */
+.show_explorer {
+    width: 100%;
+
+    img {
+        width: 17px;
+        height: 17px;
+    }
+}
+/* <---- Folder Default ----> */
+.align_items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+
+    &:hover {
+        background-color: $rgba_white2;
+    }
+    img {
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+    span {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .align_items {
+        width: 90%;
+    }
+}
+/* <---- End This Pc Explorer ----> */
