@@ -1,0 +1,118 @@
+.header {
+    font-family: 'Golos Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+
+    /* font-size: 18px; */
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header_img img {
+    width: 600px;
+
+}
+
+.header_img {
+    /* border: 1px solid white; */
+
+}
+
+.header_text {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 100px;
+    
+    /* border: 1px solid white; */
+
+}
+
+.header_text p {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    /* line-height: 60px; */
+    color:rgba(255, 255, 255, 0.7);
+    ;
+    
+}
+
+.header_text h1 {
+    font-size: 4rem;
+    line-height: 80px;
+}
+
+.header_text_para {
+    /* background-color: black; */
+    background: linear-gradient(125.17deg, #272727 0%, #11101D 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 10px;
+    text-align: center;
+}
+.header_circle{
+    position: absolute;
+    border: 2px solid rgb(70, 206, 251) ;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 150px;
+    right: 200px;
+    text-align: center;
+
+}
+.header_circle p{
+    color: rgb(93, 206, 244);
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1360px){
+    .header_circle{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .header_img img{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .header{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .header_text{
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .header_text{
+        /* border: 1px solid white; */
+        justify-content: center;
+        margin: 10px;
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .header_img img{
+        width: 400px;
+    }
+    .header_text h1 {
+        font-size: 3rem;
+        
+    }
+    
+}

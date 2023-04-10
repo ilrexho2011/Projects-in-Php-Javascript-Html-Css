@@ -1,0 +1,53 @@
+.business {
+    color: white;
+    width: 90%;
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 50px;
+    justify-items: end;
+    align-items: center;
+    margin-bottom: 50px;
+    
+
+}
+.business_text{
+    /* border: 1px solid white; */
+    padding: 20px;
+
+}
+
+.business_text h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.business_text p {
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+@media only screen and (max-width:870px){
+    .business_text h2 {
+        font-size: 2.5rem;
+        /* margin-bottom: 50px; */
+    }
+}
+@media only screen and (max-width:800px){
+    .business{
+        display: flex;
+        flex-direction: column;
+    }
+    .business_text{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width:450px){
+    .business .b_card_main .b_card{
+        width: 330px;
+        margin-left: 0px;
+    }
+
+}

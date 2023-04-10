@@ -1,0 +1,26 @@
+.testonomial_main {
+    color: white;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+
+}
+.testonomial_main h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.testonomial_main_para{
+    opacity: 0.5;
+}
+
+.testonomial_main_reviews {
+    margin-top: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

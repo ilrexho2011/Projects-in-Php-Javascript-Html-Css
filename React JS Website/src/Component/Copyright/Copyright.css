@@ -1,0 +1,22 @@
+.copyright{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 15px;
+    opacity: 0.6;
+}
+.social_media img{
+margin-left: 10px;
+margin-right: 10px;
+}
+@media only screen and (max-width:500px){
+    .copyright{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .social_media img{
+        margin: 10px;
+    }
+}

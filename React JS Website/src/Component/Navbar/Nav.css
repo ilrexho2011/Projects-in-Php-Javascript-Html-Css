@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+.nav {
+position: sticky;
+    font-family: 'Golos Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    display: flex;
+    /* border: 1px solid white; */
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 50px 50px 50px;
+    /* overflow: hidden; */
+    z-index: 1;
+}
+
+.nav_links {
+    /* border: 1px solid white; */
+margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 500px;
+    justify-content: space-evenly;
+}
+.nav_links p{
+    padding: 2px 3px 3px 5px;
+    border-radius: 10px;
+    transition: all .4s ease;
+    
+
+}
+.nav_links p:hover{
+    background-color: white;
+    color: black;
+    transform: translate3D(0,-1px,0) scale(1.2);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.nav_logo img {
+    width: 200px;
+}
+.nav_phone{
+    font-size: 2.3rem;
+    display: none;
+}
+
+@media only screen and (max-width: 750px){
+.nav{
+    margin: 30px 0px 50px 50px;
+
+}
+.nav_links{
+    flex-direction: column;
+    /* border: 1px solid white; */
+    position: absolute;
+    width: 180px;
+    
+    /* background: var(--black-gradient); */
+    background: var(--black-gradient);
+    border-radius: 10px;
+    top: 110px;
+
+    right: 0px;
+
+    display: none;
+    
+
+
+    
+}
+.nav_links p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
+}
+.nav_phone{
+    font-size: 2.3rem;
+    display: flex;
+    margin-right: 40px;
+}
+}
+
+
+
+/* <i class="bi bi-x-square"></i> */

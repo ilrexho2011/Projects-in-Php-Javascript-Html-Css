@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background: var(--black-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.card .transaction_main .transaction{
+    justify-items: start;
+}
+.card .transaction_main .transaction .transaction_text {
+   
+    order: 1;
+
+
+}
+
+.card .transaction_main .transaction .transaction_img {
+    order: 2;
+}
+@media only screen and (max-width:780px){
+    .card .transaction_main .transaction{
+        display: flex;
+        flex-direction: column;
+    }
+}
