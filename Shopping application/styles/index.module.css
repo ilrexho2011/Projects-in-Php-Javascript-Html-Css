@@ -1,0 +1,21 @@
+.shop_item{
+   
+    width: 95%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+    justify-content: space-evenly;
+    margin: auto;
+}
+.shop_title{
+    font-size: 3rem;
+    color: white;
+    
+}
+@media only screen and (max-width:400px){
+    .shop_title{
+        font-size: 2rem;
+        
+    } 
+}

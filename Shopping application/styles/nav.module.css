@@ -1,0 +1,90 @@
+.nav {
+    position: absolute;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 1;
+    transition: all 0.4s
+}
+
+.nav:hover {
+    height: 80px;
+}
+
+.logo {
+    position: absolute;
+    left: 30px;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.li h2 i {
+    font-size: 1.2rem;
+}
+
+.links:hover {
+    background-color: black;
+    color: white;
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 140px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+    transition: all 0.4s
+}
+
+.indicator p {
+    font-size: 10px;
+}
+
+
+
+
+@media only screen and (max-width:500px) {
+    .links {
+
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .nav {
+        padding-right: 30px;
+
+    }
+
+    .indicator {
+        right: 50px;
+    }
+
+}
