@@ -1,1 +1,3 @@
 
+# Loja Tic-Tac-Toe
+# A TICTACTOE game built with HTML, CSS and JAVASCRIPT
