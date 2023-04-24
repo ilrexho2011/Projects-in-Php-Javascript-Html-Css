@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Kelvins to Fahrenheit and Celsius</title>
+    </head>
+    <body>
+        <header>
+            <img src="/assets/Me.jpg" alt="profile" />
+            <ol>
+                <a id="h" href="/index.html" style="text-decoration: none">🏠Home</a><br /><br />
+                <a id="g" href="https://github.com/Aj-Seven" style="text-decoration: none">
+                    <img src="/assets/github2.png" alt="logo" id="github" />
+                    Github
+                </a>
+            </ol>
+        </header>
+        <h2>
+            Kelvin to Fahrenheit & Celsius Converter
+            <img id="temp" src="/assets/logoK.png" alt="logo" srcset="" />
+        </h2>
+        <p>Enter the value in Kelvin scale, it show's the converted value of Celsius & Fahrenheit Scale</p>
+        <p></p>
+        <fieldset>
+            <p>
+                <label>Kelvin:</label>
+                <input
+                    id="inputKelvin"
+                    type="number"
+                    placeholder="Kelvin"
+                    oninput="temperatureConverter(this.value)"
+                    onchange="temperatureConverter(this.value)"
+                />
+                ⁰K
+            </p>
+            <p>
+                Celsius:
+                <span id="outputCelsius"></span>
+                ⁰C
+            </p>
+            <p>
+                Fahrenheit:
+                <span id="outputFahrenheit"></span>
+                ⁰F
+            </p>
+        </fieldset>
+        <script>
+            function temperatureConverter(valNum) {
+                valNum = parseFloat(valNum)
+                document.getElementById('outputCelsius').innerHTML = valNum - 273.15
+                document.getElementById('outputFahrenheit').innerHTML = (valNum - 273.15) * 1.8 + 32
+            }
+        </script>
+    </body>
+</html>

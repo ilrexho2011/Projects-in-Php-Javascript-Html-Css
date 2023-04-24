@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Fahrenheit to Celsius & Kelvin</title>
+    </head>
+    <body>
+        <header>
+            <img src="/assets/Me.jpg" alt="profile" />
+            <ol>
+                <a id="h" href="/index.html" style="text-decoration: none">🏠Home</a><br /><br />
+                <a id="g" href="https://github.com/Aj-Seven" style="text-decoration: none">
+                    <img src="/assets/github2.png" alt="logo" id="github" />
+                    Github
+                </a>
+            </ol>
+        </header>
+        <h2>
+            Fahrenheit --> Celsius & Kelvin
+            <img id="temp" src="/assets/logoF.png" alt="logo" srcset="" />
+        </h2>
+        <p>Enter the value in Fahrenheit value, it show's the converted value of Celsius & Kelvin Scale</p>
+        <p></p>
+        <fieldset>
+            <p>
+                <label>Fahrenheit:</label>
+                <input
+                    id="inputFahrenheit"
+                    type="number"
+                    placeholder="Fahrenheit"
+                    oninput="temperatureConverter(this.value)"
+                    onchange="temperatureConverter(this.value)"
+                />
+                ⁰F
+            </p>
+            <p>
+                Celcius:
+                <span id="outputCelcius"></span>
+                ⁰C
+            </p>
+            <p>
+                Kelvin:
+                <span id="outputKelvin"></span>
+                ⁰K
+            </p>
+        </fieldset>
+        <script>
+            function temperatureConverter(valNum) {
+                valNum = parseFloat(valNum)
+                document.getElementById('outputKelvin').innerHTML = (valNum - 32) / 1.8 + 273.15
+                document.getElementById('outputCelcius').innerHTML = (valNum - 32) / 1.8
+            }
+        </script>
+    </body>
+</html>

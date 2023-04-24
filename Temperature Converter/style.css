@@ -1,0 +1,163 @@
+* {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(255,255,255),
+    lightpink);
+}
+
+header {
+    height: 190px;
+    width: 600px;
+    margin: auto;
+    align-items: center;
+    font-style: none;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    position: initial;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    float: left;
+}
+
+ol {
+    font-size: 25px;
+    align-content: right;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 0.6em;
+    padding: 1em;
+    position: relative;
+    float: right;
+}
+
+#h,
+#g {
+    color: black;
+    border-radius: 40px;
+    text-align: left;
+}
+
+#github {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+#h:hover {
+    color: red;
+    border-radius: 40px;
+}
+
+#g:hover {
+    color: red;
+    border-radius: 40px;
+}
+
+h2 {
+    padding: 0.2em;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    justify-items: center;
+    display: block;
+    font-size: 36px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.container {
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    padding: 0.5em;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.22);
+}
+
+#CelsiusToKF {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+
+    font: 14px;
+}
+
+#FahrenheitToKC {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+    font: 14px;
+}
+
+#KelvinToCF {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+    font: 14px;
+}
+
+#CelsiusToKF:hover {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+    font: 14px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid blue;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#FahrenheitToKC:hover {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+    font: 14px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid blue;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#KelvinToCF:hover {
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 35px;
+    font: 14px;
+    border-top: 3px solid red;
+    border-bottom: 3px solid blue;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}

@@ -1,0 +1,135 @@
+* {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(to right, pink, lightblue, whitesmoke, white);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 600px;
+    height: 190px;
+    margin: auto;
+    font-style: none;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    background-image: linear-gradient(to right, white, lightblue);
+}
+
+fieldset {
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    box-sizing: content-box;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25), 0 12px 12px rgba(0, 0, 0, 0.22);
+}
+
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+ol {
+    font-size: 25px;
+    align-content: right;
+    display: flex;
+    flex-direction: column;
+    margin: 0.6em;
+    padding: 1.5em;
+    position: relative;
+    float: right;
+}
+
+#h,
+#a,
+#g {
+    color: black;
+    border-radius: 40px;
+    text-align: left;
+}
+
+#inputCelsius{
+    font-size: 20px;
+}
+
+#inputFahrenheit{
+    font-size: 20px;
+}
+
+#inputKelvin{
+    font-size: 20px;
+}
+
+#github {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+#h:hover {
+    color: red;
+    border-radius: 40px;
+}
+
+#a:hover {
+    color: red;
+    border-radius: 40px;
+}
+
+#g:hover {
+    color: red;
+    border-radius: 40px;
+
+}
+
+p {
+    text-align: center;
+}
+
+#temp {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: right;
+}
+
+h2 {
+    border: 1px, solid, black;
+    padding: 2em;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    justify-items: center;
+    display: block;
+    font-size: 30px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: inherit 0 14px 26px lightsteelblue, 0 12px 12px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 18px 30px lightsteelblue, 0 14px 14px rgba(0, 0, 0, 0.22);
+}
+
+@media (prefers-color-scheme: light) {
++   8     body {
++   9     ¦   background-color: white;
++  10     ¦   color: black;
++  11     }
++  12 }
++  13                                                      +  14 @media (prefers-color-scheme: dark) {                +  15     body {                                           +  16     ¦   background-color: black;
++  17     ¦   color: white;
++  18     }
++  19 }
